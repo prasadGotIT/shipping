@@ -7,7 +7,7 @@ def configMap = [
 
 echo "Going to execute jenkins shared library"
 if ( ! env.BRANCH_NAME.equalsIgnoreCase('main') ){
-    nodeJSEKSPipeline(configMap)
+    javaEKSPipeline(configMap)
 }
 else {
     echo "Please follow the CR process"
